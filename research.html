@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
   <header>
     <h1>Prasanna</h1>
     <p>Deep Learning Enthusiast | Machine Learning Researcher</p>
@@ -20,19 +22,70 @@
   </header>
 
   <main>
-    <section>
-        <h2>Research</h2>
-        <ul>
-          <li><strong>MVTec Dataset Denoising</strong> - Collaborated with KLA Industry to enhance imaging pipelines using Restormer.</li>
-          <li><strong>Attention Concepts in Vision Transformers</strong> - Investigated novel mechanisms for efficient image classification.</li>
-        </ul>        
-      </section>
-    </section>
+    <h2>Research Experience</h2>
+    <div class="research-container">
+        <div class="research-item">
+            <h3>ML and DL for CFD Analysis</h3>
+            <div class="research-meta">
+                <span>IIT Madras</span>
+                <span>2023 - Present</span>
+            </div>
+            <p class="research-description">
+                Exploring the application of machine learning and deep learning techniques for computational fluid dynamics analysis,
+                especially in the context of wave energy converters.
+            </p>
+            <div class="research-tags">
+                <span class="research-tag">Deep Learning</span>
+                <span class="research-tag">Classical Machine Learning</span>
+                <span class="research-tag">CFD Analysis</span>
+            </div>
+            <p class="professor-info">
+                Under the guidance of Prof.Sunny Kumar
+                <br>
+                Department of Ocean Engineering , IIT Madras
+            </p>
+        </div>
+
+        <div class="research-item">
+            <h3>Reinforcement Learning applications for Active Heave Compensation</h3>
+            <div class="research-meta">
+                <span>Dimension Consultants,Singapore (Remote)</span>
+                <span>2022</span>
+            </div>
+            <p class="research-description">
+                Investigated about the application of reinforcement learning techniques for active heave compensation in offshore cranes.
+                Did literature survey and suggested a few algorithms for the same.
+            </p>
+            <div class="research-tags">
+                <span class="research-tag">Reinforcement Learning</span>
+                <span class="research-tag">Heave Compensation Mechanisms</span>
+            </div>
+            <p class="professor-info">
+                Under the guidance of Prof. 
+                <br>
+                Department of , IIT Madras
+            </p>
+        </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2024 Prasanna. All rights reserved.</p>
   </footer>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </body>
 </html>
 

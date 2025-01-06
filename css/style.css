@@ -1,47 +1,243 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --header-bg: #f4f4f4;
+    --card-bg: #fff;
+    --skill-bg: #f8f9fa;
+    --shadow-color: rgba(0,0,0,0.1);
+    --link-color: #007BFF;
+}
+
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --header-bg: #2d2d2d;
+    --card-bg: #2d2d2d;
+    --skill-bg: #3d3d3d;
+    --shadow-color: rgba(255,255,255,0.1);
+    --link-color: #66b0ff;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-  }
-  
-  header {
-    background: #f4f4f4;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background: var(--header-bg);
     padding: 20px 10px;
     text-align: center;
-  }
-  
-  header h1 {
+}
+
+header h1 {
     margin: 0;
     font-size: 2.5em;
-  }
-  
-  header p {
+}
+
+header p {
     margin: 5px 0 15px;
     font-style: italic;
-  }
-  
-  nav a {
+}
+
+nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #007BFF;
-  }
-  
-  nav a:hover {
+    color: var(--link-color);
+}
+
+nav a:hover {
     text-decoration: underline;
-  }
-  
-  main {
+}
+
+main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  footer {
+}
+
+footer {
     text-align: center;
-    background: #f4f4f4;
+    background: var(--header-bg);
     padding: 10px 0;
     margin-top: 20px;
-  }
-  
+}
+
+.about-section {
+    margin: 2em 0;
+    padding: 20px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.skill-item {
+    background: var(--skill-bg);
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.education-item {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--link-color);
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile-section img {
+    width: 160px;  /* slightly smaller to avoid edge visibility */
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    object-position: center;  /* ensures center of image is focal point */
+    box-shadow: 
+        0 4px 12px rgba(0,0,0,0.1),    /* soft shadow spread */
+        0 8px 20px rgba(0,0,0,0.08);   /* wider subtle shadow */
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: var(--card-bg);
+    color: var(--text-color);
+    cursor: pointer;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    opacity: 0.9;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.project-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    margin: 0 0 1rem 0;
+    color: var(--text-color);
+}
+
+.project-info p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-links a {
+    padding: 0.5rem 1rem;
+    background: var(--link-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.project-links a:hover {
+    opacity: 0.9;
+}
+
+.research-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.research-item {
+    padding: 2rem;
+    margin: 1rem 0;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.research-item h3 {
+    color: var(--text-color);
+    margin: 0 0 1rem 0;
+}
+
+.research-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--link-color);
+    font-size: 0.9rem;
+}
+
+.research-description {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.research-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.research-tag {
+    background: var(--skill-bg);
+    color: var(--text-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.professor-info {
+    font-style: italic;
+    color: var(--text-color);
+    opacity: 0.9;
+}

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
   <header>
     <h1>Prasanna</h1>
     <p>Deep Learning Enthusiast | Machine Learning Researcher</p>
@@ -20,19 +22,63 @@
   </header>
 
   <main>
-    <section>
-        <h2>Projects</h2>
-        <ul>
-          <li><strong>Gold Price Simulation</strong> - Modeled price fluctuations using random walks and user-defined moving averages.</li>
-          <li><strong>Skin Cancer Detection</strong> - Built CNNs with patient metadata to classify dermoscopic images.</li>
-        </ul>
-      </section>
-    </section>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="assets/gold-price.jpg" alt="Gold Price Simulation">
+            <div class="project-info">
+                <h3>Gold Price Simulation</h3>
+                <p>Modeled price fluctuations using random walks and user-defined moving averages.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/gold-price" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Demo</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/skin-cancer.jpg" alt="Skin Cancer Detection">
+            <div class="project-info">
+                <h3>Skin Cancer Detection</h3>
+                <p>Built CNNs with patient metadata to classify dermoscopic images.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/skin-cancer" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Paper</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="assets/deep-learning.jpg" alt="Deep Learning Project">
+            <div class="project-info">
+                <h3>Image Classification</h3>
+                <p>Implemented various deep learning architectures for image classification tasks.</p>
+                <div class="project-links">
+                    <a href="https://github.com/yourusername/image-classification" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Demo</a>
+                </div>
+            </div>
+        </div>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2024 Prasanna. All rights reserved.</p>
   </footer>
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+      
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
+    }
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  </script>
 </body>
 </html>
 

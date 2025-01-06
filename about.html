@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme.js"></script>
 </head>
 <body>
+  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
   <header>
     <h1>Prasanna</h1>
     <p>Deep Learning Enthusiast | Machine Learning Researcher</p>
@@ -20,18 +22,44 @@
   </header>
 
   <main>
-    <section>
-        <h2>About Me</h2>
-        <p>
-          I am currently pursuing research in Machine Learning and Computer
-          Vision. My areas of expertise include:
-        </p>
-        <ul>
-          <li>Deep Learning for Imaging</li>
-          <li>Generative Adversarial Networks</li>
-          <li>Multimodal AI</li>
-        </ul>
-      </section>
+    <div class="profile-section">
+      <img src="assets/profile.jpg" alt="Prasanna's Profile Picture">
+      <h2>About Me</h2>
+      <p>I am a passionate researcher in Machine Learning and Computer Vision, dedicated to pushing the boundaries of artificial intelligence and its applications in real-world scenarios.</p>
+    </div>
+
+    <section class="about-section">
+      <h3>Research Interests</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Deep Learning for Imaging</div>
+        <div class="skill-item">Machine Learning</div>
+        <div class="skill-item">Deep Learning</div>
+        <div class="skill-item">Computer Vision</div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h3>Education</h3>
+      <div class="education-item">
+        <h4>M-Tech in Computational Engineering</h4>
+        <p>Indian Institute of Technology Madras, 2024-Present</p>
+      </div>
+      <div class="education-item">
+        <h4>B.Tech in Naval Architecture and Ocean Engineering</h4>
+        <p>Indian Institute of Technology Madras, 2021-Present</p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-item">Python</div>
+        <div class="skill-item">PyTorch</div>
+        <div class="skill-item">TensorFlow</div>
+        <div class="skill-item">Computer Vision</div>
+        <div class="skill-item">Machine Learning</div>
+        <div class="skill-item">Data Analysis</div>
+      </div>
     </section>
   </main>
 
