@@ -1,125 +1,183 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/theme.js"></script>
-</head>
-<body>
-  <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
-  <header>
-    <h1>Prasanna</h1>
-    <p>Deep Learning and Machine Learning Enthusiast</p>
-    <nav>
-      <a href="index.html">Home</a>  
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/theme.js"></script>
+  </head>
+  <body>
+    <button class="theme-toggle" onclick="toggleTheme()">
+      🌓 Toggle Theme
+    </button>
+    <header>
+      <h1>Prasanna</h1>
+      <p>Deep Learning and Machine Learning Enthusiast</p>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
 
-  <main>
-    <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <img src="assets/image_denoising.png" alt="MVTec Denoising">
-        <div class="project-info">
-          <h3>Industrial Defect-Aware Image Denoising | KLA Challenge EE5179</h3>
-          <p>Denoised the MVTec Dataset using deep learning methods, exploring architectures including U-Net and Restormer to effectively retain defects while removing noise.</p>
-          <div class="project-links">
-            <a href="https://github.com/Sap27/KLA_challenge" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="assets/VQA.png" alt="Visual Question Answering">
-        <div class="project-info">
-          <h3>Visual Question Answering Application</h3>
-          <p>A Docker containerizable web application that performs Visual Question Answering (VQA) using the ViLT model from Hugging Face. The application allows users to upload an image and ask questions about it, receiving AI-generated answers in real-time.</p>
-          <div class="project-links">
-            <a href="https://github.com/Prasanna030/Visual-Question-Answering-FastAPI-APP" target="_blank">GitHub</a>
-          </div>
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="assets/amazon_ml.jpg" alt="OCR ML Project">
-        <div class="project-info">
-      <h3>Product Attribute Extraction using ML & OCR | Amazon ML Challenge 2024</h3>
-      <p>Built an intelligent system using EasyOCR and ML techniques to automatically extract and standardize product specifications from images.</p>
-      <div class="project-links">
-          <a href="https://github.com/Prasanna030/Amazon_ML_Challenge-24" target="_blank">GitHub</a>
-      </div>
-        </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/underwater.png" alt="Underwater Segmentation">
-      <div class="project-info">
-        <h3>Underwater Image Semantic Segmentation | OE5510 Project</h3>
-        <p>Developed semantic segmentation models using U-Net and ResNet on SUIM dataset with model explainability through feature maps, saliency maps and Grad-CAM visualization.</p>
-        <div class="project-links">
-          <a href="https://github.com/Prasanna030/OE5510-MLOE" target="_blank">GitHub</a>
-        </div>
-      </div>
-    </div>
+    <main>
+      <h2>Projects</h2>
+      <div class="projects-grid">
         <div class="project-card">
-            <img src="assets/melanoma_detection.png" alt="Multimodal-Melanoma detection">
-            <div class="project-info">
-                <h3>Multimodal AI for Melanoma Detection</h3>
-                <p>Fine-tuned ResNet+LSTM model for lesion classification and integrated LLaMA 3 for personalized treatment recommendations.</p>
-                <div class="project-links">
-                    <a href="https://github.com/Prasanna030/ATMECS-GenAI-Hackathon-24" target="_blank">GitHub</a>
-                </div>
+          <img src="assets/image_denoising.png" alt="MVTec Denoising" />
+          <div class="project-info">
+            <h3>
+              Industrial Defect-Aware Image Denoising | KLA Challenge EE5179
+            </h3>
+            <p>
+              Denoised the MVTec Dataset using deep learning methods, exploring
+              architectures including U-Net and Restormer to effectively retain
+              defects while removing noise.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/Sap27/KLA_challenge" target="_blank"
+                >GitHub</a
+              >
             </div>
+          </div>
         </div>
         <div class="project-card">
-          <img src="assets/recapify.png" alt="Recapify Meeting Assistant">
+          <img src="assets/VQA.png" alt="Visual Question Answering" />
+          <div class="project-info">
+            <h3>Visual Question Answering Application</h3>
+            <p>
+              A Docker containerizable web application that performs Visual
+              Question Answering (VQA) using the ViLT model from Hugging Face.
+              The application allows users to upload an image and ask questions
+              about it, receiving AI-generated answers in real-time.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Prasanna030/Visual-Question-Answering-FastAPI-APP"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/recapify.png" alt="Recapify Meeting Assistant" />
           <div class="project-info">
             <h3>Memoria AI - AI-Powered Meeting Assistant</h3>
-            <p>Building an innovative meeting documentation system with hardware and software solutions, supporting both online and offline meetings. Features include real-time transcription, Indian language support, and automated summary generation with advanced Filters to analyse.</p>
+            <p>
+              Building an innovative meeting documentation system with hardware
+              and software solutions, supporting both online and offline
+              meetings. Features include real-time transcription, Indian
+              language support, and automated summary generation with advanced
+              Filters to analyse.
+            </p>
             <div class="project-links">
-              <a href="https://memoriaai.vercel.app/" target="_blank">Website Link</a>
+              <a href="https://memoriaai.vercel.app/" target="_blank"
+                >Website Link</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/underwater.png" alt="Underwater Segmentation" />
+          <div class="project-info">
+            <h3>Underwater Image Semantic Segmentation | OE5510 Project</h3>
+            <p>
+              Developed semantic segmentation models using U-Net and ResNet on
+              SUIM dataset with model explainability through feature maps,
+              saliency maps and Grad-CAM visualization.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Prasanna030/OE5510-MLOE"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="assets/Voyageur.png" alt="Recapify Meeting Assistant" />
+          <div class="project-info">
+            <h3>Voyageur- Generative AI based Trip Planner</h3>
+            <p>
+              Intelligent itinerary generation with budget and interest
+              optimization​.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://ai-trip-planner-beige-delta.vercel.app/"
+                target="_blank"
+                >Website Link</a
+              >
             </div>
           </div>
         </div>
         <div class="project-card">
-          <img src="assets/Voyageur.png" alt="Recapify Meeting Assistant">
+          <img src="assets/amazon_ml.jpg" alt="OCR ML Project" />
           <div class="project-info">
-            <h3>Voyageur- Generative AI based Trip Planner</h3>
-            <p>Intelligent itinerary
-              generation with budget  
-              and interest optimization​.</p>
+            <h3>
+              Product Attribute Extraction using ML & OCR | Amazon ML Challenge
+              2024
+            </h3>
+            <p>
+              Built an intelligent system using EasyOCR and ML techniques to
+              automatically extract and standardize product specifications from
+              images.
+            </p>
             <div class="project-links">
-              <a href="https://ai-trip-planner-beige-delta.vercel.app/" target="_blank">Website Link</a>
+              <a
+                href="https://github.com/Prasanna030/Amazon_ML_Challenge-24"
+                target="_blank"
+                >GitHub</a
+              >
             </div>
           </div>
         </div>
+        <div class="project-card">
+          <img
+            src="assets/melanoma_detection.png"
+            alt="Multimodal-Melanoma detection"
+          />
+          <div class="project-info">
+            <h3>Multimodal AI for Melanoma Detection</h3>
+            <p>
+              Fine-tuned ResNet+LSTM model for lesion classification and
+              integrated LLaMA 3 for personalized treatment recommendations.
+            </p>
+            <div class="project-links">
+              <a
+                href="https://github.com/Prasanna030/ATMECS-GenAI-Hackathon-24"
+                target="_blank"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
+    <footer>
+      <p>(In-Development) &copy;2024 Prasanna. All rights reserved.</p>
+    </footer>
+    <script>
+      function toggleTheme() {
+        const html = document.documentElement;
+        const currentTheme = html.getAttribute("data-theme");
+        const newTheme = currentTheme === "light" ? "dark" : "light";
 
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      }
 
-    </div>
-  </main>
-
-  <footer>
-    <p> (In-Development) &copy;2024 Prasanna. All rights reserved.</p>
-  </footer>
-  <script>
-    function toggleTheme() {
-      const html = document.documentElement;
-      const currentTheme = html.getAttribute('data-theme');
-      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-      
-      html.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    }
-
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem('theme') || 'light';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  </script>
-</body>
+      // Check for saved theme preference
+      const savedTheme = localStorage.getItem("theme") || "light";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+    </script>
+  </body>
 </html>
-
-
