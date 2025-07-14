@@ -22,6 +22,10 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -335,4 +339,33 @@ footer {
 
 .social-links a:hover {
     transform: translateY(-5px);
+}
+
+.section {
+    min-height: 100vh;
+    padding: 4rem 0;
+    margin-bottom: 2rem;
+    scroll-margin-top: 80px; /* Helps with scrolling to the right position */
+}
+
+.publication-link {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.publication-link a {
+    display: inline-flex;
+    align-items: center;
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.publication-link a i {
+    margin-right: 0.5rem;
+}
+
+.publication-link a:hover {
+    text-decoration: underline;
 }

@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png"> -->
-  <link rel="icon" type="image/png"  href="assets/favicon.ico">
-  <!-- <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png"> -->
-  <!-- <link rel="manifest" href="./assets/site.webmanifest"> -->
+  <link rel="icon" type="image/png" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="js/theme.js"></script>
 </head>
 <body>
@@ -18,18 +16,277 @@
     <p>Deep Learning and Machine Learning Enthusiast</p>
     <p>Undergraduate Student at Indian Institute of Technology Madras</p>
     <nav>
-      <a href="about.html">About</a>
-      <a href="research.html">Research</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
+      <a href="#welcome">Home</a>
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section>
+    <!-- Welcome Section -->
+    <section id="welcome" class="section">
       <h2>Welcome!</h2>
       <p>I am a Dual Degree student at IIT Madras, passionate about research in Machine Learning, with a focus on Computer Vision and Deep Learning applications across various engineering domains.</p>
       <img src="./assets/CNN_Image.jpg" alt="CNN_Image" style="width: 100%; height: auto;">
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="profile-section">
+        <img src="assets/Profile.jpeg" alt="Prasanna's Profile Picture">
+        <h2>About Me</h2>
+        <p>I am a passionate researcher and Engineer in Machine Learning and Computer Vision, dedicated to pushing the boundaries of artificial intelligence and its applications in real-world scenarios.</p>
+      </div>
+
+      <section class="about-section">
+        <h3>Research Interests</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Deep Learning for Imaging</div>
+          <div class="skill-item">Machine Learning</div>
+          <div class="skill-item">Deep Learning</div>
+          <div class="skill-item">Computer Vision</div>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h3>Education</h3>
+        <div class="education-item">
+          <h4>M-Tech in Computational Engineering</h4>
+          <p>Indian Institute of Technology Madras, 2024-Present</p>
+        </div>
+        <div class="education-item">
+          <h4>B.Tech in Naval Architecture and Ocean Engineering</h4>
+          <p>Indian Institute of Technology Madras, 2021-Present</p>
+        </div>
+      </section>
+
+      <section class="about-section">
+        <h3>Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item">Python</div>
+          <div class="skill-item">PyTorch</div>
+          <div class="skill-item">C++</div>
+          <div class="skill-item">Computer Vision</div>
+          <div class="skill-item">Machine Learning</div>
+          <div class="skill-item">Data Analysis</div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+      <h2>Research Experience</h2>
+      <div class="research-container">
+        <div class="research-item">
+          <div class="research-header">
+            <img src="assets/hku_logo.png" alt="Hokkaido University" class="institution-logo">
+          </div>
+          <h3>3D Gaussian Splatting with Diffusion Models</h3>
+          <div class="research-meta">
+            <span>Hokkaido University, Japan</span>
+            <span>June 2025 - Present</span>
+          </div>
+          <p class="research-description">
+            Research internship at the Structured Artificial Intelligence Lab focusing on integrating 3D Gaussian Splatting 
+            with Diffusion Models. The work aims to improve 3D reconstruction, novel view synthesis, and scene representation quality.
+            Additionally, investigating Rectified Flow models and latent optimization methods to enhance generative consistency
+            and training efficiency in diffusion-based 3D reconstruction.
+          </p>
+          <div class="research-tags">
+            <span class="research-tag">3D Reconstruction</span>
+            <span class="research-tag">Diffusion Models</span>
+            <span class="research-tag">Gaussian Splatting</span>
+            <span class="research-tag">Computer Vision</span>
+          </div>
+          <p class="professor-info">
+            Under the guidance of Prof. Takashi Matsubara
+            <br>
+            Structured Artificial Intelligence Lab, Hokkaido University
+          </p>
+        </div>
+
+
+
+        <div class="research-item">
+          <div class="research-header">
+            <img src="assets/IIT-Madras-logo-01.png" alt="IIT Madras" class="institution-logo">
+          </div>
+          <h3>Design Optimization using Machine Learning and CFD</h3>
+          <div class="research-meta">
+            <span>IIT Madras</span>
+            <span>2023 - Present</span>
+          </div>
+          <p class="research-description">
+            Integrated CFD simulations with ML models to efficiently optimize OWC Wave Energy Converters.
+            Applied predictive Machine learning and Deep learning techniques for accurate power prediction and design optimization, 
+            and the research got published in Ocean Systems Engineering Journal.
+          </p>
+          <div class="research-tags">
+            <span class="research-tag">Deep Learning</span>
+            <span class="research-tag">Classical Machine Learning</span>
+            <span class="research-tag">CFD Analysis</span>
+            <span class="research-tag">Design Optimization</span>
+          </div>
+          <p class="professor-info">
+            Under the guidance of Prof. Sunny Kumar
+            <br>
+            Department of Ocean Engineering, IIT Madras
+          </p>
+          <div class="publication-link">
+            <a href="https://www.techno-press.org/download2.php?journal=ose&volume=15&num=2&ordernum=3" target="_blank">
+              <i class="fas fa-file-alt"></i> Published in Ocean Systems Engineering Journal
+            </a>
+          </div>
+        </div>
+
+        <div class="research-item">
+          <div class="research-header">
+            <img src="assets/Dimension_consultants_logo.jpeg" alt="Dimension Consultants" class="institution-logo">
+          </div>
+          <h3>Reinforcement Learning applications for Active Heave Compensation</h3>
+          <div class="research-meta">
+            <span>Dimension Consultants,Singapore (Remote)</span>
+            <span>2022</span>
+          </div>
+          <p class="research-description">
+            Investigated about the application of reinforcement learning techniques for active heave compensation in offshore cranes.
+            Did literature survey and suggested a few algorithms for the same.
+          </p>
+          <div class="research-tags">
+            <span class="research-tag">Reinforcement Learning</span>
+            <span class="research-tag">Heave Compensation Mechanisms</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="assets/stable_diffusion.png" alt="Stable Diffusion Fine-tuning">
+          <div class="project-info">
+            <h3>LoRA Fine-tuning of Stable Diffusion Models | EE6180 Industry Project</h3>
+            <p>Fine-tuned Stable Diffusion models on custom Bajirao Mastani movie dataset for culturally contextual image generation. 
+            Generated captions using VLM3 and fine-tuned models on H100 GPU using LoRA framework with Diffusers and SimpleTuner. 
+            Collaboration with Immerso AI (Eros International).</p>
+            <div class="project-links">
+              <a href="https://github.com/Prasanna030/EE6180-ImmersoAI-Project" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/image_denoising.png" alt="MVTec Denoising">
+          <div class="project-info">
+            <h3>Industrial Defect-Aware Image Denoising | KLA Challenge EE5179</h3>
+            <p>Denoised the MVTec Dataset using deep learning methods, exploring architectures including U-Net and Restormer to effectively retain defects while removing noise.</p>
+            <div class="project-links">
+              <a href="https://github.com/Sap27/KLA_challenge" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/VQA.png" alt="Visual Question Answering">
+          <div class="project-info">
+            <h3>Visual Question Answering Application</h3>
+            <p>A Docker containerizable web application that performs Visual Question Answering (VQA) using the ViLT model from Hugging Face. The application allows users to upload an image and ask questions about it, receiving AI-generated answers in real-time.</p>
+            <div class="project-links">
+              <a href="https://github.com/Prasanna030/Visual-Question-Answering-FastAPI-APP" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/amazon_ml.jpg" alt="OCR ML Project">
+          <div class="project-info">
+            <h3>Product Attribute Extraction using ML & OCR | Amazon ML Challenge 2024</h3>
+            <p>Built an intelligent system using EasyOCR and ML techniques to automatically extract and standardize product specifications from images.</p>
+            <div class="project-links">
+              <a href="https://github.com/Prasanna030/Amazon_ML_Challenge-24" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/underwater.png" alt="Underwater Segmentation">
+          <div class="project-info">
+            <h3>Underwater Image Semantic Segmentation | OE5510 Project</h3>
+            <p>Developed semantic segmentation models using U-Net and ResNet on SUIM dataset with model explainability through feature maps, saliency maps and Grad-CAM visualization.</p>
+            <div class="project-links">
+              <a href="https://github.com/Prasanna030/OE5510-MLOE" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/melanoma_detection.png" alt="Multimodal-Melanoma detection">
+          <div class="project-info">
+            <h3>Multimodal AI for Melanoma Detection</h3>
+            <p>Fine-tuned ResNet+LSTM model for lesion classification and integrated LLaMA 3 for personalized treatment recommendations.</p>
+            <div class="project-links">
+              <a href="https://github.com/Prasanna030/ATMECS-GenAI-Hackathon-24" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <img src="assets/recapify.png" alt="Recapify Meeting Assistant">
+          <div class="project-info">
+            <h3>Memoria AI - AI-Powered Meeting Assistant</h3>
+            <p>Building an innovative meeting documentation system with hardware and software solutions, supporting both online and offline meetings. Features include real-time transcription, Indian language support, and automated summary generation with advanced Filters to analyse.</p>
+            <div class="project-links">
+              <a href="#" target="_blank">Coming Soon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <h2>Get in Touch</h2>
+      <div class="contact-container">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <a href="mailto:na21b055@smail.iitm.ac.in">na21b055@smail.iitm.ac.in</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-linkedin"></i>
+          </div>
+          <div class="contact-info">
+            <h3>LinkedIn</h3>
+            <a href="https://linkedin.com/in/prasanna-s03" target="_blank">linkedin.com/in/prasanna-s03</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <a href="https://github.com/Prasanna030" target="_blank">github.com/Prasanna030</a>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/Prasanna030" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/prasanna-s03" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:na21b055@smail.iitm.ac.in"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
     </section>
   </main>
 
