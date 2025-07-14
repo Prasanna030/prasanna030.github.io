@@ -230,6 +230,20 @@ footer {
     font-size: 0.9rem;
 }
 
+.institution-logo {
+    max-width: 120px;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.research-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .research-description {
     line-height: 1.6;
     margin-bottom: 1rem;
